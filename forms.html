@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+		* {
+			font-family: 'Lemonada', cursive;
+		}
+		
+		h1 {
+			text-align: center;
+		}
+
+		hr {
+			width: 50%;
+		}
+
+		.form {
+			background-color: rgb(225 225 225);
+			border-radius: 50px;
+			padding: 20px;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+		}
+
+		label, span {
+			color: rgb(99 99 99);
+			font-size: 1.3vw;
+		}
+
+		input[type=text], input[type=email], input[type=password], input[type=phone] {
+			width: 75%;
+			padding: 5px;
+			border: 2px solid green;
+			border-radius: 5px;
+			transition: width 0.4s ease-in-out;
+			background-color: #f1f1f1;
+			box-shadow: 0 0 5px;
+			outline: none;
+		}
+
+		select {
+			width: 15%;
+			padding: 5px;
+			border: 2px solid green;
+			border-radius: 5px;
+			background-color: #f1f1f1;
+			box-shadow: 0 0 5px;
+			cursor: pointer;
+		}
+
+		input[type=date] {
+			width: 14%;
+			padding: 5px;
+			border: 2px solid green;
+			border-radius: 5px;
+			background-color: #f1f1f1;
+			box-shadow: 0 0 5px;
+			cursor: pointer;
+		}
+
+		input[type=radio], input[type=checkbox] {
+			background-color: blue;
+			/* why is this not working */
+		}
+
+		input[type=submit], input[type=reset] {
+			width: 10%;
+			cursor: pointer;
+			background-color: blue;
+			color: white;
+			border: none;
+			margin: 10px;
+			padding: 5px;
+			box-shadow: 0 0 10px darkblue;
+		}
+		
+		input[type=text]:focus, input[type=email]:focus {
+			width: 100%;
+			outline: none;
+			border: 2px solid blue;
+			box-shadow: 0 0 10px;
+		}
+	</style>
+
+</head>
+<body style="margin: auto; font-size: 1vw;">
+<div class="form">
+	<form>
+		<h1>Registration Form For Cooking Class</h1>
+		<hr>
+
+		<label for=firstname>First Name</label><br>
+		<input type="text" name="firstname" id="firstname">
+        <br><br>
+		
+		<label for=lastname>Last Name</label><br>
+		<input type="text" name="lastname" id="lastname">
+		<br><br>
+
+		<label for="othername">Other Names</label><br>
+		<input type="text" name="othername" id="othername">
+		<br><br>
+		
+		<label for="em">Email</label><br>
+		<input type="email" name="email" id="em" placeholder="eg: register@peace.com">
+		<br><br>
+
+		<label for="pw">Password</label><br>
+		<input type="password" name="password" id="pw">
+		<br><br>
+
+		<label for=cpw>Comfirm Password</label><br>
+		<input type="password" name="" id="cpw">
+		<br><br>
+		
+		<label for="phone">Phone</label><br>
+		<input type="phone" name="phone" id="phone" placeholder="0244100100">
+		<br><br>
+		
+		<section  class="gender">
+			<span>Gender</span><br>
+
+		<input type="radio" name="gender" value="male" id="male">
+		<label for="male" >Male</label>
+
+		<input type="radio" name="gender" value="female" id="female">
+		<label for="female">Female</label>
+
+		<input type="radio" name="gender" value="other" id="other">
+		<label for="other">Other</label>
+
+		</section>
+		<br><br>
+
+		<span>Date Of Birth:</span>  <input type="date" name="DOB">
+
+		<br><br>
+
+		<label for="nationality">Nationality:</label>
+		<select id="nationality">
+			<option value="ghanaian">Ghanaian</option>
+			<option value="nigerian">Nigerian</option>
+			<option value="togolese">Togolese</option>
+		</select>
+		<br><br>
+		
+		<label for="COR">Country of Residence</label><br>
+		<input type="text"  name="residence" list="countries" placeholder="Select Country">
+		
+		<datalist id="countries">
+			<option value="ghana">Ghana</option>
+			<option value="togo">Togo</option>
+			<option value="ivory coast">Ivory Coast</option>
+			<option value="nigeria">Nigeria</option>
+			<option value="benin">Benin</option>
+		</datalist>
+		<br><br>
+		
+		<section class="hobbies">
+			<span>Hobbies</span>
+			<br>
+			<input type="checkbox" name="hobbies" id="swim" value="Swimming">
+			<label for="swim">Swimming</label>
+
+			<input type="checkbox" name="hobbies" id="read" value="Reading">
+			<label for="read">Reading</label>
+
+			<input type="checkbox" name="hobbies" id="game" value="Gaming">
+			<label for="game">Gaming</label>
+
+			<input type="checkbox" name="hobbies" id="bet" value="Betting">
+			<label for="bet">Betting</label>
+
+			<input type="checkbox" name="hobbies" id="horse" value="horse riding">
+			<label for="horse">Horse Riding</label>
+		</section>
+		<br><br>
+
+		<input type="submit" value="sign up"> <input type="reset" name="reset">
+
+
+	</form>
+
+	
+
+</div>
+</body>
+</html>

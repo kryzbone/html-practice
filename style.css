@@ -1,0 +1,111 @@
+.top {
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	position: sticky;
+	top: 0;
+	background-color: white;
+
+}
+
+.form {
+	height: 10px;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	flex:1;
+}
+
+.label {
+	display: none;
+}
+
+th {
+
+	background-color: lightblue;
+}
+
+th, td {
+	border: 2px hiden white;
+	padding: 10px;
+
+}
+
+tr:nth-child(odd) {
+	background-color:  #66ff66;
+
+}
+
+td:hover {
+	background-color: lightgrey;
+}
+
+h1 {
+	text-align: center;
+}
+
+label {
+	margin: 0 10px;
+}
+
+input {
+	margin: 0 5px;
+}
+
+input[type="submit"] { 
+	margin: 0 0 0 5px;
+	padding: 2px;
+	border: none;
+	font-size: 0.8rem;
+
+}
+
+input[type="submit"]:hover {
+	border: none;
+	background: blue;
+	color: white;
+}
+
+#join, #nav {
+	color: black;
+	text-decoration: none;
+}
+
+#join:hover, #nav:hover {
+	text-decoration: none;
+	color: blue;
+}
+
+.navigation {
+	background: none;
+	box-shadow: none;
+	flex:3; 
+}
+
+#nav {
+	margin: 0 10px 0 0;
+
+}
+
+#intro {
+	width: 80%;
+	margin: auto;
+	text-align: justify;
+}
+
+#list {
+	width: 80%;
+	margin: auto;
+}
+
+table {
+	width: 80%;
+	margin: auto;
+}
+
+footer {
+	background: silver;
+	height: 10vh;
+	text-align: center;
+
+}

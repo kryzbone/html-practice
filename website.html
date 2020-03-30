@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="top">
+		<nav class="navigation">
+			<a id="nav" href="#intro">Introduction</a>
+			<a id="nav" href="#table">Table</a>
+			<a id="nav" href="#list">List</a>
+		</nav>
+	
+		<form class="form"> 
+			<label class="label" for="username">Username</label>
+			<br>
+			<input type="text" name="username" id="username" placeholder="Username/Email" required title="username">
+			<br>
+			<label  class="label" for=pw>Password</label>
+			<br>
+			<input type="password" name="password" id=pw minlength="8" maxlength="15" placeholder="Password" required >
+			<br>
+			<input type="submit" value="log in" title="log in">
+		</form>
+
+		<a href="./forms.html" id="join">Join Us</a>
+	</div>
+
+	<div id="intro">
+		<h1>What I Have Learnt So Far</h1>
+	
+		<h2>Introduction To HTML</h2>
+		<p>So far I have learnt alot to be able to build a website skeleton. Some of the knowledge i have aquired so far are the basic structure of HTML, tags, elements, attributes, tabels, and forms. With the help of HTML u can add images, videos, audios and other forms of media to your website. Per my understanding Html helps one in creating the framework or foundation for which the entire website will be built which makes it a very important aspect of web development. For more informaton about html click on this link <em><a href="http://google.com" target="_blank">Learn More</a></em>  </p>
+
+		<h2>Basic structure of HTML</h2>
+		<p>HTML is structured in two parts which are the Head and the Body. The contents the title of the website. Contents in the Head structure does not appear on the website page but rather on the the browser tab, because of this feature the head section is used to title the website. The body section contains all the information that will appear on the website page itself. </p>
+
+		<img src="basic-structure.png" alt="picture of HTML structure">
+	</div>
+
+	
+	<div id="list">
+
+		<h3>List of some Tags</h3>
+		
+		<ul>
+			<li>head tag</li>
+			<li>body tag</li>
+			<li>paragraph tag</li>
+			<li>img tag</li>
+			<li>h1,h2,h3,h4,h5,h6 tags</li>
+			<li>anchor tag</li>
+			<li>video tag</li>
+			<li>div tag</li>
+			<li>strong tag</li>
+
+		</ul>
+
+		<h3>Steps in creating a table in HTML</h3>
+
+		<p>Just like in normal life where we create tables to help organize our information, we could also create tables in HTMl to help in organising data/information on the website. The only difference between creating a table on paper and on a website is that on paper the table has lines/borders but on a websites they don't. Follow the steps below to create a table in HTML</p>
+
+		<ol>
+			<li>Create a Table using <strong>&lt;table&gt;&lt;/table&gt;</strong> tag</li>
+			<li>Within the table tag create a table row using <strong>&lt;tr&gt;&lt;/tr&gt;</strong> tag</li>
+			<li>within the table row tag add the table headings using <strong>&lt;th&gt;</strong> tag </li>
+			<li>Now you can add data to the table using the <strong>&lt;td&gt;</strong> tag</li>
+		</ol>
+
+		<p>If you follow the steps above correctly you will get something like this</p>
+
+	</div>
+
+	<div id="table">
+		<table>
+		
+			<tr>
+				<th>Cars</th>
+	        	<th>Model</th>
+				<th>Colour</th>
+			</tr>
+		
+			<tr>
+				<td>Benz</td>
+				<td>C 300</td>
+				<td>White</td>
+			</tr>
+		
+			<tr>
+				<td>BMW</td>
+				<td>X6</td>
+				<td>Blue</td>
+			</tr>
+
+			<tr>
+				<td>Kia</td>
+				<td>Picanto</td>
+				<td>Red</td>
+			</tr>
+
+			<tr>
+				<td>Tesla</td>
+				<td>Model 3</td>
+				<td>Black</td>
+			</tr>
+	
+		</table>
+
+	</div>
+
+	<footer>
+		<p>This is what I achieved in three hours NOT Impressive at all </p>
+	</footer>
+
+
+</body>
+</html>
